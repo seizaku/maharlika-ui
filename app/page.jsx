@@ -52,6 +52,7 @@ export default function LandingPage() {
                 src={sectionImg1.src}
                 width={640}
                 height={640}
+                alt="customer-and-back-office-support-image"
               />
             </SectionColumn>
             <SectionColumn>
@@ -115,6 +116,7 @@ export default function LandingPage() {
                 src={sectionImg2.src}
                 width={640}
                 height={640}
+                alt="graphic-designing-and-video-editing-image"
               />
             </SectionColumn>
           </SectionGrid2>
@@ -127,6 +129,7 @@ export default function LandingPage() {
                 src={sectionImg3.src}
                 width={640}
                 height={640}
+                alt="spanish-bilingual-support-image"
               />
             </SectionColumn>
             <SectionColumn>
