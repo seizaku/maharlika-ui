@@ -96,9 +96,7 @@ export const SectionHero = ({
           className="h-[100%] w-full"
         />
         <div
-          className={`z-20 absolute ${
-            bgcolor ? bgcolor : "bg-background"
-          }/90 h-full w-full flex items-center`}
+          className={`z-20 absolute bg-slate-950/90 h-full w-full flex items-center`}
         >
           {children}
         </div>
