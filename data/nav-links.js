@@ -17,6 +17,6 @@ export const navLinks = [
   },
   {
     title: "About Us",
-    href: "/about-us",
+    href: "/",
   },
 ];
