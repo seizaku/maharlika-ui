@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Hero from "@/app/(components)/hero";
 import {
   Section,
+  SectionHero,
   SectionGrid1,
   SectionGrid2,
   SectionGrid4,
@@ -25,6 +26,7 @@ import {
   Building2,
   Truck,
 } from "lucide-react";
+import { FrequentlyAskedQuestions } from "@/app/(components)/faq";
 import Footer from "@/components/footer";
 
 export default function LandingPage() {
@@ -34,17 +36,22 @@ export default function LandingPage() {
       <main className="overflow-hidden">
         <Hero />
         <Section className="bg-slate-100">
-          <div className="text-center pt-24 container">
+          <div className="text-center p-24 container">
             <SectionHeading className="md:text-5xl mb-0 font-semibold">
               Why Vintazk?
             </SectionHeading>
-            <SectionParagraph className="px-44 mt-4 mb-0">
+            <SectionParagraph className="md:px-44">
               Choose Vintazk for unparalleled expertise, up to 70% cost savings,
               industry specialization, innovation, flexibility, diverse
               services, data-driven insights, and unwavering client support—all
               in one trusted partner. Elevate your business with Vintazk today.
             </SectionParagraph>
+            <Button size="lg" className="mt-4">
+              Learn More
+            </Button>
           </div>
+        </Section>
+        <Section>
           <SectionGrid2>
             <SectionColumn className="flex justify-center items-center">
               <Image
@@ -67,7 +74,7 @@ export default function LandingPage() {
               </SectionParagraph>
               <ul className="mb-4 flex flex-col gap-2">
                 <FeatureItem>
-                  Email, Chat, Inbound, and Outbound Support
+                  Email, Chat, Inbound & Outbound Support
                 </FeatureItem>
                 <FeatureItem>Reporting and Data Analytics</FeatureItem>
                 <FeatureItem>Quality Assurance</FeatureItem>
@@ -95,15 +102,11 @@ export default function LandingPage() {
                 partner in turning clicks into lasting brand loyalty.
               </SectionParagraph>
               <ul className="mb-4 flex flex-col gap-2">
-                <FeatureItem>
-                  On-Page SEO, Technical SEO, Content SEO{" "}
-                </FeatureItem>
                 <FeatureItem>Web Development</FeatureItem>
                 <FeatureItem>Customer Relationship Management</FeatureItem>
+                <FeatureItem>On-Page, Technical, and Content SEO </FeatureItem>
                 <FeatureItem>Social Media Management </FeatureItem>
-                <FeatureItem>
-                  Email/SMS Marketing Campaigns, Lead Generation
-                </FeatureItem>
+                <FeatureItem>Email/SMS Marketing Campaigns</FeatureItem>
                 <FeatureItem>Graphic Designing and Video Editing</FeatureItem>
               </ul>
               <Button size="lg" className="mt-4">
@@ -121,7 +124,7 @@ export default function LandingPage() {
             </SectionColumn>
           </SectionGrid2>
         </Section>
-        <Section className="bg-slate-100">
+        <Section>
           <SectionGrid2>
             <SectionColumn className="flex justify-center items-center">
               <Image
@@ -133,9 +136,9 @@ export default function LandingPage() {
               />
             </SectionColumn>
             <SectionColumn>
-              <SectionHeading>Spanish Bilingual Support</SectionHeading>
+              <SectionHeading>Bilingual Support</SectionHeading>
               <SectionParagraph>
-                Seamlessly connect with your diverse audience using our Spanish
+                Seamlessly connect with your diverse audience using our
                 Bilingual Support Services, ensuring effective communication and
                 customer satisfaction in both English and Spanish. Our expert
                 team navigates language barriers effortlessly, delivering
@@ -152,74 +155,74 @@ export default function LandingPage() {
             </SectionColumn>
           </SectionGrid2>
         </Section>
-        <Section>
+        <Section className="bg-slate-100 ">
           <SectionGrid1>
             <SectionColumn className="text-center">
               <SectionHeading>Industries we serve</SectionHeading>
-              <SectionParagraph className="px-44">
+              <SectionParagraph className="md:px-44">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
                 bibendum metus. Nulla facilisi. Nunc efficitur augue vel justo
                 bibendum, id hendrerit orci iaculis.
               </SectionParagraph>
               <SectionGrid4 className="gap-24 items-start mt-14 font-semibold">
-                <div className="text-left text-lg">
-                  <Landmark className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <Landmark className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Real estate
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <HeartPulse className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <HeartPulse className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Healthcare
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <Store className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <Store className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Retail & Sales
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <Banknote className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <Banknote className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Finance
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <BarChart3 className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <BarChart3 className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Accounting
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <Laptop2 className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <Laptop2 className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Software
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <Building2 className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <Building2 className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Professional
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     ut bibendum metus.
                   </p>
                 </div>
-                <div className="text-left text-lg">
-                  <Truck className="h-12 w-12 text-slate-600 mb-2" />
+                <div className="text-center md:text-left text-lg">
+                  <Truck className="mx-auto md:mx-0 h-12 w-12 text-slate-800 mb-2" />
                   Distribution
                   <p className="text-sm leading-7 font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -227,6 +230,23 @@ export default function LandingPage() {
                   </p>
                 </div>
               </SectionGrid4>
+            </SectionColumn>
+          </SectionGrid1>
+        </Section>
+        <Section>
+          <SectionGrid1>
+            <SectionColumn className="text-center">
+              <SectionHeading>Frequently Asked Questions</SectionHeading>
+              <SectionParagraph>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                bibendum metus. Nulla facilisi.
+              </SectionParagraph>
+              <div className="flex flex-col gap-4 justify-center">
+                <FrequentlyAskedQuestions />
+              </div>
+              <Button size="lg" className="mt-4">
+                Load More
+              </Button>
             </SectionColumn>
           </SectionGrid1>
         </Section>
