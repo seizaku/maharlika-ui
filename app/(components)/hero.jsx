@@ -20,7 +20,7 @@ export default function Hero() {
             className="gap-4 group bg-transparent"
             size="lg"
           >
-            Book a Discovery Call
+            <span className="hidden bd:block">Book a </span>Discovery Call
             <PhoneCall className="h-4 w-4 ease-out transition-all group-hover:animate-pulse" />
           </Button>
         </div>
