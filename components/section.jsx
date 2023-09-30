@@ -17,7 +17,7 @@ export const SectionGrid1 = ({ children, className, gap }) => {
       className={cn(
         `grid place-items-center grid-cols-1 gap-${
           gap ? gap : "0"
-        } lg:grid-cols-1 container text-center xl:text-left py-24 px-24`,
+        } lg:grid-cols-1 container text-center xl:text-left py-24 md:px-24`,
         className
       )}
     >
@@ -31,7 +31,7 @@ export const SectionGrid2 = ({ children, className, gap }) => {
       className={cn(
         `grid place-items-center grid-cols-1 gap-${
           gap ? gap : "0"
-        } lg:grid-cols-2 container text-center xl:text-left py-24 px-24`,
+        } lg:grid-cols-2 container text-center xl:text-left py-24 md:px-24`,
         className
       )}
     >
@@ -45,7 +45,7 @@ export const SectionGrid3 = ({ children, className, gap }) => {
       className={cn(
         `grid place-items-center grid-cols-1 gap-${
           gap ? gap : "0"
-        } lg:grid-cols-3 container text-center xl:text-left py-24 px-24`,
+        } lg:grid-cols-3 container text-center xl:text-left py-24 md:px-24`,
         className
       )}
     >
@@ -113,7 +113,7 @@ export const SectionColumn = ({ children, className }) => {
 
 export const SectionHeading = ({ children, className }) => {
   return (
-    <h1 className={cn("text-1xl md:text-4xl font-semibold mb-4", className)}>
+    <h1 className={cn("text-1xl text-4xl font-semibold mb-4", className)}>
       {children}
     </h1>
   );
@@ -121,7 +121,7 @@ export const SectionHeading = ({ children, className }) => {
 
 export const SectionParagraph = ({ children, className }) => {
   return (
-    <p className={cn("leading-7 text-md font-normal mb-4", className)}>
+    <p className={cn("leading-7 text-md font-normal mt-4 mb-4", className)}>
       {children}
     </p>
   );
